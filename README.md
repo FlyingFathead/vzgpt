@@ -1,11 +1,15 @@
 # vzgpt (Viznut's GPT-2 implementation)
 
-This is my C-only implementation of GPT-2 inference, mostly intended for my
-own learning and toying. GPT-2 is the neural language model developed at
-OpenAI.
+See the original version at https://github.com/viznut/vzgpt
 
-This is mainly for my own use. I suppose Fabrice Bellard's gpt2tc is a
-more mature implementation: https://bellard.org/libnc/gpt2tc.html
+In this fork:
+
+- added deployment scripts for Ubuntu 22.04LTS
+- included prebuilt binary (x86_64 / amd64)
+
+This is Viznut's C-only implementation of GPT-2 inference, mostly intended for 
+personal learning and toying. GPT-2 is the neural language model developed at
+OpenAI.
 
 Features:
 - CPU-only calculation one token at a time.
@@ -35,6 +39,4 @@ Image-GPT models are also technically supported but there's still bughunting
 to do before they work properly.
 
 TODO:
-- Finish optional INT8 quantization of all the bigger matrices. (yes, I want to be able to run this on small ARM boards and such)
-- Finish Image-GPT support.
-- Proper configfile.
+- Same stuff as in the original
