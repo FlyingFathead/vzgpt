@@ -9,6 +9,7 @@ In this fork:
 - => added a script `ubuntu_22_04_apt_install.sh` for necessary apt installs
 - => added `requirements.txt` for `tensorflow`
 - included prebuilt Linux binary, `vzgpt` (x86_64 / amd64)
+  (the prebuilt binary is built w/ threading and SDL support)
 
 This is Viznut's C-only implementation of GPT-2 inference, mostly intended for 
 personal learning and toying. GPT-2 is the neural language model developed at
