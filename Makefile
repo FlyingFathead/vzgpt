@@ -1,6 +1,7 @@
-CC=clang
+CC=clang -I/usr/include/SDL -I/usr/include/lua5.4
 # linenoise-ng requires stdc++, classic linenoise does not
-LUALIBS=-llua -lreadline
+# LUALIBS=-llua -lreadline
+LUALIBS=-llua5.4 -lreadline
 # -lncurses
 #-llinenoise -lstdc++
 SDLLIBS=`sdl-config --libs --cflags` -lSDL_image

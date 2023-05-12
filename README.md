@@ -5,7 +5,10 @@ See the original version at https://github.com/viznut/vzgpt
 In this fork:
 
 - added deployment scripts for Ubuntu 22.04LTS
-- included prebuilt binary (x86_64 / amd64)
+- => fixed `Makefile` to include Lua5.2 + SDL1.2 libraries on Ubuntu/Debian systems
+- => added a script `ubuntu_22_04_apt_install.sh` for necessary apt installs
+- => added `requirements.txt` for `tensorflow`
+- included prebuilt Linux binary, `vzgpt` (x86_64 / amd64)
 
 This is Viznut's C-only implementation of GPT-2 inference, mostly intended for 
 personal learning and toying. GPT-2 is the neural language model developed at
